@@ -12,7 +12,7 @@ from utils import create_gt_tiles,retrieve_ann_vertex,retrieve_ann_coord
 import imageio
 
 #
-wsi_path = '/home/afridi/Desktop/moffitt_ali/data_wsi/images/train'
+wsi_path = r'/home/afridi/Desktop/moffitt_ali/data_wsi/images/train'
 xml_path = '/home/afridi/Desktop/moffitt_ali/data_wsi/annotations/train'
 target_dir = '/home/afridi/Desktop/moffitt_ali/data_patches'
 
