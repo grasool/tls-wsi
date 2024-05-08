@@ -1,4 +1,17 @@
-import openslide
+# import openslide
+
+# The path can also be read from a config file, etc.
+OPENSLIDE_PATH = r'D:\openslide\openslide-bin-4.0.0.2-windows-x64\openslide-bin-4.0.0.2-windows-x64\bin'
+
+import os
+if hasattr(os, 'add_dll_directory'):
+    # Windows
+    with os.add_dll_directory(OPENSLIDE_PATH):
+        import openslide
+        print("Imported openslide - from new path")
+else:
+    import openslide
+
 import os
 import cv2
 import numpy as np
@@ -12,9 +25,9 @@ from utils import create_gt_tiles,retrieve_ann_vertex,retrieve_ann_coord
 import imageio
 
 #
-wsi_path = r'/home/afridi/Desktop/moffitt_ali/data_wsi/images/train'
-xml_path = '/home/afridi/Desktop/moffitt_ali/data_wsi/annotations/train'
-target_dir = '/home/afridi/Desktop/moffitt_ali/data_patches'
+wsi_path = r'D:\Data\tls-data\testing-1-file'
+xml_path = r'D:\Data\tls-data\testing-1-file'
+target_dir = r'D:\Data\tls-data\patched-data'
 
      
 i=0
