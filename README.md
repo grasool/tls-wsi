@@ -1,6 +1,5 @@
 # tls-wsi
 
-
 ## Setup
 
 python 3.10
@@ -8,7 +7,8 @@ python 3.10
 torch
 
 openslide-python
-(For windows machines) 
+
+For windows machines
 [Windows Binaries](https://openslide.org/download/#windows-binaries)
 [Importing OpenSlide](https://openslide.org/api/python/#basic-usage)
 
@@ -22,7 +22,6 @@ imageio
 
 matplotlib
 
-
 ## Running Code
 
-Setup path
+Setup path in the pre_processtrain.py and pre_processtest.py
