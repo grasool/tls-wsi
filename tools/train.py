@@ -3,7 +3,7 @@ import pdb
 import sys
 import os
 import torch
-sys.path.append('../moffitt_ali')
+sys.path.append('../tls-wsi')
 from models.unet import UNet
 from torch import optim, nn
 from torch.utils.data import DataLoader
@@ -24,7 +24,7 @@ def main(args):
     svs_dir = args.data_dir + '/train_patches'
     anno_dir = args.data_dir + '/train_gt'
     dataset = data_moffitt(svs_dir,anno_dir,transforms=transforms_train)
-    data_loader_train = DataLoader(dataset=dataset,batch_size=4,shuffle=True)
+    data_loader_train = DataLoader(dataset=dataset,batch_size=32,shuffle=True)
     num_epochs = 50
     for epoch in range(num_epochs):
         iteration = 0 
@@ -40,6 +40,7 @@ def main(args):
             iteration+=1
         if((epoch+1%10)==0):
             torch.save(model.state_dict(),f'moffit{epoch}.pth')
+    # Validation code
     print("Training Completed")
     # model.eval()
     # with torch.no_grad():

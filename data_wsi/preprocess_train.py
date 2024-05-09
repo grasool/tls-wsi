@@ -31,6 +31,7 @@ target_dir = r'D:\Data\tls-data\patched-data'
 
      
 i=0
+# @ali to add a check for the file type for svs files - 
 for wsi in os.listdir(wsi_path):
     i+=1
     print(f"Preprocessing Slide number {i} i.e {wsi}")
