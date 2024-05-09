@@ -23,9 +23,10 @@ imageio
 matplotlib
 
 Ali to add folder structure instructions here
-## Folder Structure
-1. 
 
+## Folder Structure
+
+1. add folder structure 
 
 train_data
 -- train_patches
@@ -34,8 +35,6 @@ train_data
 val_data
 -- val_patches
 -- val_gt
-
-
 
 ## Running Code
 
@@ -47,17 +46,20 @@ val_data
 2. Run ```python preprocess_train.py```
 
 ### Visualize the extracted data
+
 (task)  - Aperio ImageScope
 
 ### Train the Model
+
 Model archtecure
 How to change model archtecure
-
-
+config file
 
 ### Run Inference
 
 ### Visualize the predictions
+
 (tasks)
+
 1. contours from JPGs to XML
 2. Aperio ImageScope visuliazation
