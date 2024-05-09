@@ -41,6 +41,8 @@ def main(args):
         if((epoch+1%10)==0):
             torch.save(model.state_dict(),f'moffit{epoch}.pth')
     # Validation code
+    # Save loss and accuracy - train and val
+    # Save the best model
     print("Training Completed")
     # model.eval()
     # with torch.no_grad():

@@ -14,7 +14,7 @@ if hasattr(os, 'add_dll_directory'):
 else:
     import openslide
 
-import openslide
+# import openslide
 from matplotlib import pyplot as plt
 import numpy as np
 import cv2

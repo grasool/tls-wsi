@@ -27,7 +27,6 @@ Ali to add folder structure instructions here
 ## Folder Structure
 
 1. add folder structure 
-
 train_data
 -- train_patches
 -- train_gt
