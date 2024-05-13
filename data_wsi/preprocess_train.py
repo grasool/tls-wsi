@@ -89,8 +89,8 @@ for wsi in os.listdir(wsi_path):
                 # pdb.set_trace()
                 imageio.imwrite(wsi_name + wsi.replace(wsi[-4:],'') + tile_name + ".tif", temp_tile_np)
                 # pdb.set_trace()
-                plt.imsave(wsi_name_gt + wsi.replace(wsi[-4:],'') + tile_name + ".jpg",tiles_gt[tile_count][2],cmap="gray")
-                #imageio.imwrite(wsi_name_gt + wsi.replace(wsi[-4:],'') + tile_name + ".tif", (tiles_gt[tile_count][2]*255).astype(np.uint8))
+                #plt.imsave(wsi_name_gt + wsi.replace(wsi[-4:],'') + tile_name + ".jpg",tiles_gt[tile_count][2],cmap="gray")
+                imageio.imwrite(wsi_name_gt + wsi.replace(wsi[-4:],'') + tile_name + ".tif", (tiles_gt[tile_count][2]*255).astype(np.uint8))
             else:
                 print("NOT PROCESSING TILE:", tile_name)
                 # pdb.set_trace()
